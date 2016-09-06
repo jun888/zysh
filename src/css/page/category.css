@@ -1,0 +1,222 @@
+.p15 a:hover{
+	color: #FF4466;
+	text-decoration: underline;
+}
+/*左侧*/
+.lh155{
+	line-height: 55px;
+}
+.dh span{
+   width: 180px;
+   display: block;
+   color: #333333;
+   height:40px;
+   line-height: 40px;
+   padding-left: 20px;
+   border-bottom: 1px solid #e7e7e7;
+   background: #f5f5f5 url(../../img/ff.png) no-repeat 163px 14px;
+}
+.dh ul li {
+    width: 150px;
+    padding-left: 50px;
+    height: 32px;
+    line-height: 32px;
+    background: url(../../img/ff.png) no-repeat 38px -49px;
+    border: none;
+}
+.dh ul li:hover >a{
+	color: #FF4466;
+}
+.ahover {
+    color: #ff5500;
+}
+
+/*右侧*/
+.typetit{display: inline-block;padding: 6px 10px;}
+.class-list li{
+	display: inline-block;
+	float: left;
+	padding: 6px 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.class-list li.active{
+    background: #FF4466;
+    color:#FFFFFF;
+    }
+.bt_dashed{
+	border-bottom: 1px dashed #D0D0D0;
+}
+.bt_dashed:last-child{
+	border-bottom: none;
+}
+
+/*右侧下面部分*/
+.listing-viewtype-switch {
+    margin-bottom:10px;
+    border-top: none;
+    line-height: 52px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: #fff;
+}
+.listing-viewtype-switch>div {
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+.listing-viewtype-switch input {
+    margin-right: .2em;
+}
+
+.list-ad-items>li {
+    padding: 20px 1.5em;
+    border-bottom: 1px dotted #cdcdcd;
+    -webkit-transition: background-color 271ms ease;
+    transition: background-color 271ms ease;
+    position: relative;
+}
+.list-ad-items>li:after, .list-ad-items>li:before{
+	content: " ";
+    display: table;
+}
+
+.list-ad-items a.media-cap {
+    height: 100px;
+     width: 100px;
+    float: left;
+    background: #cdcdcd;
+    display: block;
+    margin-right: 1em;
+    position: relative;
+    overflow: hidden;
+}
+.list-ad-items .media-body {
+    overflow: hidden;
+}	
+.list-ad-items .media-body-title {
+    font-size: 18px;
+    line-height: 24px;
+}
+.list-ad-items .ad-item-detail {
+    min-height: 1.6em;
+    line-height: 1.6em;
+    color: #999;
+    font-size: 14px;
+    margin-top: 1em;
+}
+.list-ad-items .ad-item-detail {
+    min-height: 1.6em;
+    line-height: 1.6em;
+    color: #999;
+    font-size: 14px;
+    margin-top: 1em;
+}
+/*.list-ad-items .highlight {
+    float: right;
+    color: #f46;
+    font-weight: 700;
+    font-size: 16px;
+}*/
+.list-ad-items .media-body-title>a {
+    vertical-align: middle;
+    font-weight: 700;
+    margin-right: .2em;
+}
+.list-ad-items .media-body-title>a:hover{
+	text-decoration: underline;
+	color: #FF4466;
+}
+.list-ad-items a.media-cap>span {
+    position: absolute;
+    background: #000;
+    background: rgba(0,0,0,.6);
+    left: 0;
+    bottom: 0;
+    padding: .1em .5em;
+    font-size: 12px;
+    color: #fff;
+}
+.list-ad-items .media-body-title>.tag {
+    font-weight: 400;
+}
+.tag {
+    font-size: 66.6666666%;
+    display: inline-block;
+    padding: .25em;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 400;
+    margin-right: .2em;
+    overflow: hidden;
+    vertical-align: middle;
+    line-height: 1em;
+}
+.tag-vip {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    background-image: url(http://s.baixing.net/img/refashion/icon_vip.png?v2);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.contact-button{
+	border: 1px solid #f46;
+    background-color: transparent;
+    color: #f46;
+    border-radius: 2px;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    height: 36px;
+    line-height: 34px;
+    padding: 0 2em;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+.contact-button i {
+    margin-right: 5px;
+}
+/*分页*/
+.list-pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 2px;
+}
+.list-pagination>li {
+    display: inline;
+}
+.list-pagination>li:first-child>span {
+    margin-left: 0;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.list-pagination>li>a, .list-pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    margin-left: .5em;
+}
+.list-pagination>.active>span{
+	z-index: 2;
+    color: #fff;
+    background-color: #f46;
+    border-color: #cdcdcd;
+    cursor: default;
+}
+ 
+    
+    
+    
+    

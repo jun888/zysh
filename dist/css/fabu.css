@@ -1,0 +1,46 @@
+
+.slogan {
+    padding: 40px 0;
+    font-size: 28px;
+}
+ul.flow {
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 17px;
+    text-align: center;
+    color: #666;
+}
+ul.flow li.flow-item {
+    display: inline-block;
+    padding: 0 35px;
+}
+ul.flow i.icon-arrow-right {
+    color: #cdcdcd;
+}
+
+ul.flow li.flow-item>label.i-badge {
+    padding: 0 7px;
+    margin-right: 12px;
+    color: #fff;
+    background-color: #cdcdcd;
+    border-radius: 12px;
+}
+ul.flow li.flow-item.active>label.i-badge {
+    background-color: #f46;
+}
+
+#publish {
+    margin: 32px 0 24px;
+    padding: 16px 16px 36px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+}
+#publish .separate {
+    padding-left: 360px;
+    padding-bottom: 8px;
+    margin: 16px 0 8px;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 700;
+    border-bottom: 1px solid #dedede;
+}

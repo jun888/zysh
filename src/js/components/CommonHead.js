@@ -42,10 +42,8 @@ class ComHead extends Component{
 class CommonLogo extends Component{
 	render(){
 		return (
-			<div className="breadcrumb pr">
-				<h1>
-					<a href="#">logo</a>
-				</h1>
+			<div className="logo pr">
+				<a href="#">logo</a>
 				<span className="slogan pa">简单，快速，搞得定！</span>
 			</div>
 		);
@@ -101,7 +99,7 @@ class HomePageHead extends Component{
 class HeardNav extends Component{
 	render(){
 		return (
-			<nav className="container fff">
+			<nav className="nav fff">
 				<ul className="main-nav w1200">
 					<li className="home"><a href="#">信息首页</a></li>
 					<li><a href="#">生活服务</a></li>

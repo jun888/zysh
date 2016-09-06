@@ -3,18 +3,18 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 table {border-collapse:collapse;border-spacing:0;} 
 fieldset,img {border:0} 
 address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal} 
-ol,ul {list-style:none} 
+ol,ul {list-style:none;} 
 caption,th {text-align:left} 
-h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal} 
+h1,h2,h3,h4,h5,h6 {font-size:100% !important;font-weight:normal !important;} 
 q:before,q:after {content:''} 
 abbr,acronym { border:0}
-a{text-decoration: none;color: inherit;}
+a{text-decoration: none;color: inherit; }
 body {
-    font-family: 'Hiragino Sans GB','Microsoft YaHei','黑体',sans-serif;
-    font-size: 14px;
+    font-family: 'Hiragino Sans GB','Microsoft YaHei','黑体',sans-serif !important;
+    font-size: 14px !important;
     line-height: 1.428571429;
-    color: #333;
-    background-color: #f0f0f0;
+    color: #333 !important;
+    background-color: #f0f0f0 !important;
 }
 .ov{
 	overflow:hidden;
@@ -30,6 +30,7 @@ body {
 .t2{text-indent:2em}
 .red,a.red{color:#cc0031}
 .color666{color: #666666;}
+.colorFFF{color: #FFF;}
 .darkblue,a.darkblue{color:#039}
 .gray,a.gray{color:#878787}
 .lh150{line-height:150%}
@@ -44,8 +45,9 @@ a.cGreen:hover{
 	color:#cc0031;
 }
 /*背景*/
-.graybg{background-color: #F0F0F0;}
-.fff{ background: #FFFFFF;}
+.graybg{background-color: #F0F0F0 !important;}
+.fff{ background: #FFFFFF !important;}
+.F46bg{background-color: #FF4466 !important;}
 
 /*定位*/
 .tl{text-align:left}
@@ -72,12 +74,16 @@ a.cGreen:hover{
 .w100{width:100px}
 .w200{width:200px}
 .w250{width:250px}
+.w300{width:300px}
 .w357{width:357px}
 .w450{width:450px}
 .w400{width:400px;}
 .w500{width:500px}
 .w650{width:650px}
 .w800{width:800px}
+.w880{width:880px}
+.w900{width:900px}
+.w980{width:980px}
 .w1200{width:1200px; overflow: hidden;}
 .w{width:100%}
 .h50{height:50px}
@@ -100,6 +106,7 @@ a.cGreen:hover{
 .mb5{margin-bottom:5px}
 .mb10{margin-bottom:10px}
 .mb15{margin-bottom:15px}
+.mb30{margin-bottom:30px !important;}
 .mb100{margin-bottom:100px}
 .ml5{margin-left:5px}
 .ml10{margin-left:10px}
@@ -124,6 +131,8 @@ a.cGreen:hover{
 .pt30{padding-top:30px}
 .pt50{padding-top:50px}
 .pb5{padding-bottom:5px}
+.pb10{padding-bottom:10px}
+.pb20{padding-bottom:20px}
 .pb100{padding-bottom:100px}
 .pl5{padding-left:5px}
 .pl10{padding-left:10px}
@@ -154,7 +163,9 @@ body #header .toolbar,body #header .location{
 	justify-content: space-between;
 	-webkit-justify-content: space-between;
 }
-
+body #header .toolbar ul{
+	margin-bottom: 0;
+}
 body #header .toolbar li{
 	display: inline;
     height: 20px;
@@ -209,23 +220,25 @@ body #header .toolbar li a{
 	color: #666666;
 }
 body #header .toolbar li a:hover{
-	text-decoration: underline;
-	color:#cc0031;
+	text-decoration: underline !important;
+	color:#f46 !important;
 }
 body #header .location{
 	align-items:center;
 }
-body #header .location .breadcrumb{
-	line-height: 115px;
+body #header .location .logo{
+	line-height: 115px !important;
 }
 body #header .location .slogan {
-    line-height: 32px;
-    width: 100%;
+    line-height: 32px !important;
+    width: 100% ;
     bottom: 13px;
     left: 0;
     text-align: center;
     display: inline-block;
     min-width: 140px;
+    padding: 0;
+    font-size: 100%;
 }
 
 body #header .location form{
@@ -280,11 +293,11 @@ body #header .location .newline a {
 body #header .location .newline a:hover{
 	text-decoration: underline;
 }
-body #header .location .pull-right {
+body #header .location .pull-right{
     width: 180px;
     text-align: center;
 }
-body #header .location a.post {
+body #header .location a.post{
     margin-bottom: 10px;
     height: 44px;
     line-height: 42px;
@@ -314,7 +327,7 @@ body #header .location a#manage:hover{
 	text-decoration: underline;
 }
 
-body #header .container {
+body #header .nav {
     border-bottom: 2px solid #f46;
 }
 body #header .main-nav {
@@ -331,11 +344,17 @@ body #header .main-nav li {
     color: #000;
 }
 body #header .main-nav li.home {
-    background: #f46;
-    color: #fff;
+    background: #f46 !important;
+}
+body #header .main-nav li.home a{
+	 color: #fff !important;
 }
 body #header .main-nav li a {
     font-size: 18px;
+    color: inherit;
+}
+body #header .main-nav li a:hover{
+	text-decoration: none;
 }
 
 body #footer {

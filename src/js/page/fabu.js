@@ -15,17 +15,56 @@ render(
 		document.getElementById("pageindex")
 	);
 
-/*切换选择*/
-$(".spread-lib").on('click',function(){
-	if($(this).hasClass('spread-lib-hover')){
+$(function(){
+	/*切换选择*/
+	$(".spread-lib").on('click',function(){
+		if($(this).hasClass('spread-lib-hover')){
+			RemoveSpread();
+		}else
+		{
+			RemoveSpread();
+			$(this).addClass('spread-lib-hover');
+		}
+	});
+	
+	//移除样式 
+	function RemoveSpread(){
 		$(".spread-lib").each(function(num,ele){
-			$(ele).removeClass('spread-lib-hover');
+				$(ele).removeClass('spread-lib-hover');
 		});
-	}else
-	{
-		$(".spread-lib").each(function(num,ele){
-			$(ele).removeClass('spread-lib-hover');
-		});
-		$(this).addClass('spread-lib-hover');
+	};
+	
+	//判断 阅读是否选中
+	$("#isyuedu").on('click',function(){
+		isCheck();
+	});
+	isCheck();
+	
+	function isCheck(){
+		if(!$("#isyuedu").is(':checked'))
+		{
+			$("#fabu-from-submit").css({"border":"none","backgroundColor":"buttonface"});
+			$("#fabu-from-submit").unbind( "click" )
+		}else
+		{
+			$("#fabu-from-submit").css({"border":"1px solid #f46","backgroundColor":"#f46"});
+			$("#fabu-from-submit").bind('click',function(){
+				//如果登录了就直接发布 
+				
+				//如果没有登录，那么弹出登录框登录后直接发布
+				$("#dialog").animate({opacity: 'show',display:""},200);
+			});
+		}
 	}
-});
+	
+	//关闭弹层
+	$("#close").on('click',function(){
+			$("#dialog").animate({opacity: 'hide',display:"none"},300);
+	});
+	
+	
+})
+
+
+
+

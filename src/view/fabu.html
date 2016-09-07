@@ -172,7 +172,7 @@
   
   <div class="form-group mb30">
     <div class="col-sm-10 tc">
-      <button type="submit" class="btn" id="fabu-from-submit">免费注册并发布</button>
+      <button type="button" class="btn" id="fabu-from-submit">免费注册并发布</button>
     </div>
   </div>
   
@@ -180,7 +180,7 @@
     <div class="col-sm-10 tc">
       <div class="checkbox">
         <label>
-          <input type="checkbox"> 本人已仔细阅读并同意 用户服务协议
+          <input type="checkbox" id="isyuedu"> 本人已仔细阅读并同意 用户服务协议
         </label>
       </div>
     </div>
@@ -191,6 +191,20 @@
 
 			
 		</section>
-		
+		<div class="mask" id="dialog" style="display: none;">
+			<article class="w357 marauto dialog">
+				<header class="gray pr">
+					<p class="tit graybg">登录</p>
+					<p class="pa close" id="close">x</p>
+				</header>
+				<div class="fff p10">
+					请输入您收到的验证码登录并发布信息。
+					<h2>15265484858</h2>
+					<div class="tc m15">
+						<button type="submit" class="btn btn-loging">立即登录</button>
+					</div>
+				</div>
+			</article>
+		</div>
 	</body>
 </html>

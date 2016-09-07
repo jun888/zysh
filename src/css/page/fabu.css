@@ -64,7 +64,7 @@ ul.flow li.flow-item.active>label.i-badge {
     margin-right: 5px;
 }
 
-#fabu-from-submit{
+#fabu-from-submit,.btn-loging{
 	border: 1px solid #f46;
     background-color: #f46;
     color: #fff;
@@ -138,3 +138,46 @@ ul.flow li.flow-item.active>label.i-badge {
 .spread-section .spread-lib-hover .spread-lib-header img.tag-selected {
     display: block;
 }
+
+/*dialog弹出层*/
+.mask{
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	top:0;
+	left: 0;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+.dialog{
+	border: 1px solid #dedede;
+	box-shadow: 0 0 20px rgba(0,0,0,.3);
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+.dialog .close{
+	top: 10px;
+	right: 10px;
+	transition: all .8s ease;
+	-webkit-transition: all .8s ease;
+}
+.dialog .close:hover{
+	transform: rotateZ(360deg);
+	-webkit-transform: rotateZ(360deg);
+	transition: all .8s ease-in-out;
+	-webkit-transition: all .8s ease-in-out;;
+	transform-origin: center;
+	-webkit-transform-origin: center;
+}
+.dialog .tit{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #E5E5E5;
+	margin-bottom: 0;	
+	padding-left: 10px;
+}
+

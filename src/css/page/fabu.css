@@ -162,14 +162,14 @@ ul.flow li.flow-item.active>label.i-badge {
 .dialog .close{
 	top: 10px;
 	right: 10px;
-	transition: all .8s ease;
-	-webkit-transition: all .8s ease;
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
 }
 .dialog .close:hover{
-	transform: rotateZ(360deg);
-	-webkit-transform: rotateZ(360deg);
-	transition: all .8s ease-in-out;
-	-webkit-transition: all .8s ease-in-out;;
+	transform: rotateZ(90deg);
+	-webkit-transform: rotateZ(90deg);
+	transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;;
 	transform-origin: center;
 	-webkit-transform-origin: center;
 }

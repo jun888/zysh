@@ -62,7 +62,6 @@ $(function(){
 			$("#dialog").animate({opacity: 'hide',display:"none"},300);
 	});
 	
-	
 })
 
 
